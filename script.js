@@ -27,7 +27,7 @@ const pokémon = Object.freeze([
 const pkmDiv3 = pokémon.filter(pkm => pkm.id%3 === 0);
 console.log(pkmDiv3);
 
-const FireTypes = pokémon.filter(pkm => pkm.types.includes('fire'));
+const FireTypes = pokémon.filter(pkm => pkm.types.includes('fire')&& pkm.types.length === 1);
 console.log(FireTypes);
 
 const pkmMoreTypes = pokémon.filter(pkm => pkm.types.length > 1);
